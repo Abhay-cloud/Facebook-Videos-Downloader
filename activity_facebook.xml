@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_primary"
+        tools:context=".facebook">
+
+        <RelativeLayout
+            android:id="@+id/toprel"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            >
+            <ImageView
+                android:id="@+id/fb_activity"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/facebook_logo"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Facebook"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_below="@id/fb_activity"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toprel"
+            >
+
+
+            <EditText
+                android:id="@+id/fburl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Video URL here"
+                android:background="@color/white"
+                android:layout_margin="20dp"
+                android:elevation="3dp"
+                android:padding="15dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fburl"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/fbDownload"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Download"
+                    android:backgroundTint="@color/green"
+                    app:cornerRadius="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Paste"
+                    android:backgroundTint="@color/yellow"
+                    app:cornerRadius="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</layout>
