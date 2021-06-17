@@ -1,5 +1,5 @@
 
-# Facebook Videos Downloader 
+# Facebook Video Downloader 
 I'm going to show you another way to implement FB video downloader in Android Studio.
 
 First if you did not watch [Papaya Coder's Facebook downloader video](https://www.youtube.com/watch?v=30q1fcIIhZg) then go and watch it. Then look at my method.
